@@ -1,0 +1,24 @@
+:root {
+   --primary-color: rgb(224, 12, 224);
+   --secondary-color: rgb(40, 218, 40);
+   --tertiary-color: rgb(180, 94, 109);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   color: var(--primary-color);
+   font-family: URW Chancery L, Comic Sans MS, Comic Sans, cursive;
+}
+
+/* HEADER STYLE START */
+header {
+   background-color: var(--teritary-color);
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+}
