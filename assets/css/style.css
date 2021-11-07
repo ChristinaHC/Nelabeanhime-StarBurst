@@ -64,7 +64,7 @@ header nav ul li a:hover {
 
 /* HERO STYLE START */
 .hero {
-   position: relative;
+   position: static;
    text-align: center;
    color: white;
 }
@@ -84,43 +84,60 @@ header nav ul li a:hover {
 
 /* ABOUT ME STYLE START */
 .about-me {
-   position: relative;
+   position: static;
 }
 .about-me h2 {
-   position: relative;
+   position: static;
+   font-weight: bold;
+   font-size: 40px;
 }
 .me-text {
-   position: relative;
+   position: absolute;
+   bottom: 9px;
+   right: 18px;
+   font-size: 24px;
 }
 /* ABOUT ME STYLE END */
 
 /* WORKS STYLE START */
 .works {
-   position: relative;
+   position: static;
    display: flex;
    flex-wrap: flex;
    justify-content: flex-start;
 }
 .works h2 {
-   position: relative;
+   position: static;
+   font-weight: bold;
+   font-size: 40px;
 }
 .main-image {
-   position: relative;
+   position: absolute;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
 }
 .main-image a {
-
+   position: absolute;
+   bottom: 9px;
+   left: 18px;
+   font-weight: bold;
+   font-size: 32px;
 }
 .main-image a:hover {
-
+   background: var(--tertiary-color);
+   color: var(--secondary-color);
+   border-radius: 18px;
+   text-shadow: none;
 }
 .main-image h3 {
-
+position: absolute;
+bottom: 9px;
+left: 18px;
+font-size: 28px;
 }
 .secodary-images {
-   position: relative;
+   position: absolute;
    max-height: 100%;
    max-width: 200px;
    display: flex;
@@ -128,30 +145,47 @@ header nav ul li a:hover {
    justify-content: space-between;
 }
 .secondary-images a {
-
+   position: absolute;
+   bottom: 9px;
+   left: 18px;
+   font-weight: bold;
+   font-size: 32px;
 }
 .secondary-images a:hover {
-
+   background: var(--tertiary-color);
+   color: var(--secondary-color);
+   border-radius: 18px;
+   text-shadow: none;
 }
 .secondary-images h3 {
-
+   position: absolute;
+   bottom: 9px;
+   left: 18px;
+   font-size: 28px;
 }
 /* WORKS STYLE END */
 
 /* FOOTER STYLE START */
 .contact-me {
-   position: relative;
+   position: static;
    display: flex;
    flex-wrap: flex;
    justify-content: flex-start;
 }
 .contact-me h2 {
-   position: relative;
+   position: static;
 }
 .contact-me ul li a {
-   position: relative;
+   display: flex;
+   flex-wrap: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
 }
 .contact-me ul li a:hover {
-
+   background: var(--tertiary-color);
+   color: var(--secondary-color);
+   border-radius: 18px;
+   text-shadow: none;
 }
 /* FOOTER STYLE END */
