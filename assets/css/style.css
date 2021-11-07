@@ -66,36 +66,40 @@ header nav ul li a:hover {
 .hero {
    position: static;
    text-align: center;
-   color: white;
+   color: var(--primary-color);
 }
 
 .hero-img {
+   position: relative;
    object-fit: cover;
-   max-width: 100%;
-   height: 300px;
+   width: 100%;
+   height: 400px;
+   z-index: -1;
 }
 
 .hero-text {
    position: absolute;
-   bottom: 9px;
-   right: 18px;
+   top: 400px;
+   right: 0px;
+   margin: 9px;
 }
 /* HERO STYLE END */
 
 /* ABOUT ME STYLE START */
 .about-me {
    position: static;
+   display: flex;
 }
 .about-me h2 {
-   position: static;
    font-weight: bold;
    font-size: 40px;
+   text-align: right;
+   padding-right: 18px;
 }
 .me-text {
-   position: absolute;
-   bottom: 9px;
-   right: 18px;
    font-size: 24px;
+   padding-left: 30px;
+   border-left: 6px solid red;
 }
 /* ABOUT ME STYLE END */
 
@@ -103,19 +107,21 @@ header nav ul li a:hover {
 .works {
    position: static;
    display: flex;
-   flex-wrap: flex;
-   justify-content: flex-start;
 }
 .works h2 {
-   position: static;
    font-weight: bold;
    font-size: 40px;
+   padding-top: 30px;
+   padding-right: 18px;
 }
 .main-image {
-   position: absolute;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
+   width: 100%;
+   height: 400px;
+   padding-left: 30px;
+   border-left: 6px solid red;
+}
+.main-image:hover {
+
 }
 .main-image a {
    position: absolute;
@@ -132,16 +138,14 @@ header nav ul li a:hover {
 }
 .main-image h3 {
 position: absolute;
-bottom: 9px;
-left: 18px;
+bottom: 0px;
+left: 0px;
 font-size: 28px;
 }
 .secodary-images {
-   position: absolute;
-   max-height: 100%;
-   max-width: 200px;
-   display: flex;
-   flex-wrap: wrap;
+   display: relative;
+   width: 600px;
+   height: 350px;
    justify-content: space-between;
 }
 .secondary-images a {
@@ -159,19 +163,13 @@ font-size: 28px;
 }
 .secondary-images h3 {
    position: absolute;
-   bottom: 9px;
-   left: 18px;
+   bottom: 0px;
+   left: 0px;
    font-size: 28px;
 }
 /* WORKS STYLE END */
 
 /* FOOTER STYLE START */
-.contact-me {
-   position: static;
-   display: flex;
-   flex-wrap: flex;
-   justify-content: flex-start;
-}
 .contact-me h2 {
    position: static;
 }
